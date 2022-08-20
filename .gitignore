@@ -1,0 +1,14 @@
+/java-programming
+
+.DS_Store
+
+### Binary ###
+target/
+out/
+build/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
