@@ -9,5 +9,6 @@ public class env {
         for (Map.Entry<String,String> entry : map.entrySet())
             System.out.println("Key = " + entry.getKey() +
                     ", Value = " + entry.getValue());
+        System.out.print(System.getenv());
     }
 }
