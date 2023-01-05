@@ -1,6 +1,8 @@
 package java_coding_problem;
 
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 
@@ -9,7 +11,9 @@ public class CountingDuplicateCharacters {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String : ");
         String string = sc.nextLine();
-        /* for (int k = 0; k < stringLength; k++) {
+        int stringLength = string.length();
+        char charString[] = string.toCharArray();
+        for (int k = 0; k < stringLength; k++) {
             charString[k] = string.charAt(k);
         }
 
@@ -23,25 +27,27 @@ public class CountingDuplicateCharacters {
             }
             if (count != 0)
                 System.out.println(charString[i] + "-->" + ++count);
-        }*/
+        }
 
         /*
          * Using Map concept
          * */
 
 
-    /*    Map<Character, Integer> counts = new HashMap<>();
+/*    Map<Character, Integer> counts = new HashMap<>();
+
         for (int i = 0; i < stringLength; i++) {
+            char[] charString = new char[0];
             charString[i] = string.charAt(i);
             counts.compute(charString[i],(k,v)->(v==null)? 1:++v);
         }
 
         System.out.println(counts);
-        }
-        */
-
+        }*/
 
     }
+
+
 }
 
 

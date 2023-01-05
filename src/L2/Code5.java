@@ -54,6 +54,7 @@ public class Code5 {
         }
 
         for (int[] currentArray : resultArray) {
+            System.out.println(currentArray);
             Arrays.sort(currentArray);
         }
 

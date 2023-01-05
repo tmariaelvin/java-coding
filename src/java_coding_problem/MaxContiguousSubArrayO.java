@@ -10,6 +10,10 @@ public class MaxContiguousSubArrayO {
         int len = sc.nextInt();
         int[] array = new int[len];
         List<Integer> resultArray= new ArrayList<>();
+        List<String> rse = new ArrayList<>();
+        rse.add("elv");
+        rse.add("mas");
+        System.out.println(rse.toString());
         for(int i=0;i<len;i++){
             array[i]=sc.nextInt();
         }

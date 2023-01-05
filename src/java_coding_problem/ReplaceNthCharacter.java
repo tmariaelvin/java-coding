@@ -16,7 +16,7 @@ public class ReplaceNthCharacter {
             int chat = chars[i];
             System.out.println(chat);
             chat += 3;
-            chars[i]  =(char)chat ;
+            chars[i]  = (char)chat ;
         }
         System.out.println(chars);
         char ch = 87;
