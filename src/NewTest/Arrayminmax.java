@@ -22,7 +22,7 @@ public class Arrayminmax {
 
     public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
+      /*  Scanner sc=new Scanner(System.in);
         System.out.println("Enter the Array lenght");
         int n=sc.nextInt();
         int arr[]=new int[n];
@@ -30,6 +30,29 @@ public class Arrayminmax {
         {
             arr[i]=sc.nextInt();
         }
-        min(arr,n);
-    }
+        min(arr,n);*/
+        int nums[] = {2,7,11,15};
+        int target = 9;
+        int res[]=new int[2];
+        for(int i=0;i<nums.length;i++){
+            for(int j=i+1;j<nums.length;j++){
+                int rsu = nums[i] + nums[j];
+                if( rsu == target){
+                    res[0] = i;
+                    res[1] = j;
+
+                }
+            }
+
+        }
+for(int i=0;i<res.length;i++){
+    System.out.println(res[i]);
+
 }
+
+    }
+    }
+
+
+
+
