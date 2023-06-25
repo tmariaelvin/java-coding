@@ -1,4 +1,4 @@
-//package simple;
+package simple;//package simple;
 //import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 //import sun.plugin2.message.JavaScriptCallMessage;
 //import java.util.Arrays;
