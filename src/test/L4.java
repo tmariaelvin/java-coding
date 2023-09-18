@@ -23,7 +23,6 @@ public class L4 {
                System.out.println(inputArray[i]);
                break;
            }
-           System.out.println(inputArray);
            if(inputArray[i] == inputArray[inputArray.length-1-i]){
                System.out.println(inputArray[i]);
                break;

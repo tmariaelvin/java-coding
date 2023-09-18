@@ -1,34 +1,38 @@
 package test;
 
-import java.util.Scanner;
-
 public class L44 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Array Size : ");
-        int arrayLength = sc.nextInt();
-        int inputArray[] = new int[arrayLength];
+    public static int findDuplicate(int[] nums) {
+        int n = nums.length - 1;
+        int left = 1;
+        int right = n;
 
-        System.out.println("Enter the value");
-        for (int i = 0; i < arrayLength; i++) {
-            inputArray[i] = sc.nextInt();
-        }
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            int count = 0;
 
-
-        int flag = 0;
-        for(int i=0;i<arrayLength;i++){
-            flag =0 ;
-            for(int j=i+1;j<arrayLength;j++){
-                if(inputArray[i] == inputArray[j]){
-                    flag = 1;
-                    System.out.println(inputArray[i]);
-                    break;
+            for (int num : nums) {
+                if (num <= mid) {
+                    count++;
                 }
             }
-            if(flag == 1){
-                break;
+
+            if (count > mid) {
+                right = mid;
+            } else {
+                left = mid + 1;
             }
         }
 
+        return left;
+    }
+
+    public static void main(String[] args) {
+
+
+        int[] nums1 = {-1, 9, 6, 2, 2};
+        System.out.println(findDuplicate(nums1));  // Output: 2
+
+        int[] nums2 = {3, 11, 3, 4, 6};
+        System.out.println(findDuplicate(nums2));  // Output: 3
     }
 }

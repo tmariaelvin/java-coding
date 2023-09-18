@@ -35,6 +35,6 @@ public class lambdaExample {
         products.add(new Product("14", "Eau De Perfume Spray", "fragrance", 40,true));
         products.add(new Product("15", "Tree Oil 30ml", "skincare", 9,true));
         Map<String, List<Product>> groupedProducts = lambdaExample.groupByCategory(products, (product) -> product.category);
-        System.out.println(groupedProducts);
+        System.out.println(groupedProducts.toString());
     }
 }

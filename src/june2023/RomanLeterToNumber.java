@@ -47,3 +47,33 @@ public class RomanLeterToNumber {
 
     }
 }
+
+/*class Solution {
+    public int romanToInt(String s) {
+        Map<Character, Integer> inputValue = new HashMap<>();
+        //set the key and value in map
+        inputValue.put('I', 1);
+        inputValue.put('V', 5);
+        inputValue.put('X', 10);
+        inputValue.put('L', 50);
+        inputValue.put('C', 100);
+        inputValue.put('D', 500);
+        inputValue.put('M', 1000);
+
+
+         Integer result = 0;
+
+        if (s.length() == 1) {
+            result += inputValue.get(s.charAt(0));
+            return result;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if (i < s.length()-1 && inputValue.get(s.charAt(i)) <   inputValue.get(s.charAt(i+1))) {
+                result -= inputValue.get(s.charAt(i));
+            }else{
+                result += inputValue.get(s.charAt(i));
+            }
+        }
+        return result;
+    }
+}*/
