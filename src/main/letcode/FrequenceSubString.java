@@ -19,6 +19,8 @@ public class FrequenceSubString {
     public static void main(String[] args) {
         String input  = "001100011";
 
+        List<Integer> list = new ArrayList<>();
+
         List<String> result = new ArrayList<>();
         int start = 0;
         int zeroCount = 0;
