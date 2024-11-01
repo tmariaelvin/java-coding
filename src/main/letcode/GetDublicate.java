@@ -4,7 +4,7 @@ import java.util.*;
 
 public class GetDublicate {
     public static void main(String[] args) {
-        int[] arrs = new int[]{1, 2, 3, 4, 5, 1, 6};
+        int[] arrs = new int[]{1, 2, 3, 4, 5, 5, 6};
         int[] res = new int[arrs.length];
         Set<Integer> set = new HashSet<>();
         Map<Integer, List<Integer>> map = new HashMap<>();

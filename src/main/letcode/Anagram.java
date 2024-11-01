@@ -10,11 +10,23 @@ public class Anagram {
        map.getOrDefault(1,0);
 
        for(Integer res: map.keySet()){
-           System.out.print(map.get(res));
+           //System.out.print(map.get(res));
        }
 
        Set<Integer> set = new HashSet<>(Arrays.asList(array));
 
-        System.out.println(set);
+        String s = "eelvin";
+        String st = new String();
+        char[] ch = s.toCharArray();
+        StringBuilder sb = new StringBuilder();
+        st+=ch[0]+ch[1];
+        //System.out.println(st);
+// Append characters separately
+        sb.append(ch[0]);
+        sb.append(ch[1]);
+
+       System.out.println(sb);
+/*
+        System.out.println(set);*/
     }
 }

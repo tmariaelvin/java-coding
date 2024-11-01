@@ -46,3 +46,23 @@ public class kthlargeelementnosort {
         System.out.println(m+"kth large number is  : "+max+" position in "+index);
     }
 }
+
+
+//  public static int findKthLargest(int[] nums, int k) {
+//        // Create a min-heap (priority queue)
+//        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+//
+//        // Process each element in the array
+//        for (int num : nums) {
+//            // Add the current number to the heap
+//            minHeap.add(num);
+//
+//            // If the heap size exceeds k, remove the smallest element (min-heap root)
+//            if (minHeap.size() > k) {
+//                minHeap.poll(); // Remove the root, which is the smallest element
+//            }
+//        }
+//
+//        // The root of the heap is now the k-th largest element
+//        return minHeap.peek();
+//    }

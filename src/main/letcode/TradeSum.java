@@ -2,7 +2,7 @@ package main.letcode;
 
 public class TradeSum {
     public static void main(String[] args) {
-        int shareValue[] = {5, 4, 2, 3, 1};
+        int shareValue[] = {5, 4, 2, 3};
         int start = 1;
         int lowestValue = findTheLowestShare(shareValue, start);
         System.out.println(lowestValue);

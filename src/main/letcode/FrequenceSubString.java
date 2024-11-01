@@ -14,33 +14,33 @@ public class FrequenceSubString {
                  "10",
                  "1100",
                  "01" and
-        "0011" have equal numbers of 0s and 1s with all 0s and 1s grouped consecutively.
+
             input s = 001100011;*/
     public static void main(String[] args) {
-        String input  = "001100011";
-
-        List<Integer> list = new ArrayList<>();
+        String input = "001100011";
 
         List<String> result = new ArrayList<>();
         int start = 0;
         int zeroCount = 0;
         int oneCount = 0;
-        for(int i=0;i<input.length();i++){
-            input.charAt(i);
-            System.out.println(input.charAt(i));
-            if(input.charAt(i) == '0'){
+
+        for (int i = 0; i < input.length(); i++) {
+            char currentChar = input.charAt(i);
+
+            if (currentChar == '0') {
                 zeroCount++;
-            }
-            if(input.charAt(i) == '1'){
+            } else if (currentChar == '1') {
                 oneCount++;
             }
-            if(zeroCount == oneCount){
-                result.add(input.substring(start,i+1));
-                start =i+1;
-                zeroCount--;
-                oneCount--;
+
+            if (zeroCount == oneCount && zeroCount != 0) {
+                result.add(input.substring(start, i + 1));
+                start = i + 1;
+                zeroCount = 0;
+                oneCount = 0;
             }
         }
-        System.out.println(result.toString());
+
+        System.out.println(result);
     }
 }

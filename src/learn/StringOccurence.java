@@ -7,7 +7,9 @@ public class StringOccurence {
         System.out.println(st.indexOf(st1));
         String nums = "1101101110";
         String num = "10";
-        System.out.println(nums);
+        System.out.println(nums.indexOf(num));
 
     }
 }
+
+
